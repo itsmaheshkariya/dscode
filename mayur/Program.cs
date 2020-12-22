@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dotnet
+namespace mayur
 {
     class Program
     {
@@ -8,6 +8,5 @@ namespace dotnet
         {
             Console.WriteLine("Hello World!");
         }
-
     }
 }

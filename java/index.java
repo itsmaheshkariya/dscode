@@ -1,6 +1,16 @@
+import java.util.ArrayList;
+
 class Main {
     public static void main(String[] args) {
-      System.out.println("Hello World");
+
+      ArrayList<String> items= new ArrayList<String>();
+      
+      items.add("ok");
+      items.add("dmru");
+      items.remove("dmru");
+      for(String item:items){
+        System.out.println(item);
+      }
     }
 }
  

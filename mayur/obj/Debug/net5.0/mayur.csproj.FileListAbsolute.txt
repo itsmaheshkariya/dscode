@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.exe
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.deps.json
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.runtimeconfig.json
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.dll
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\ref\mayur.dll
+C:\Users\Asus\Desktop\mahesh\mayur\bin\Debug\net5.0\mayur.pdb
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.AssemblyInfo.cs
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.dll
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\ref\mayur.dll
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.pdb
+C:\Users\Asus\Desktop\mahesh\mayur\obj\Debug\net5.0\mayur.genruntimeconfig.cache
