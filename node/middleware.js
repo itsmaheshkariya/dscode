@@ -15,7 +15,7 @@
 //     return item < 5;
 // });
 
-let l1 = [1,2,3]
+// let l1 = [1,2,3]
 // let a = l1.find((item) => {
 //     return item < 5;
 // });
