@@ -51,4 +51,19 @@
 //         city: 'arjuni'
 //     }
 // }]
+
 // console.log(obj[0].address.pin)
+
+
+class User{
+    User(){
+        let name = "Mahesh";
+        let email = "email"
+    }
+    getFullName(this){
+        return this.name
+    }
+}
+let go = new User()
+
+console.log(go.name)

@@ -73,3 +73,6 @@ class Main {
  
 
 ```
+
+
+`EBITDA = Net Income + Interest + Taxes + Depreciation + Amortization`
