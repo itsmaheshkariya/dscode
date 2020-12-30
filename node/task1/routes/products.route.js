@@ -1,19 +1,25 @@
 const express = require("express")
 const router = express.Router()
 
-const { GetProducts, PostProduct, GetProductsWithCategory } = require("../controllers/products.controller")
+const controller = require("../controllers/products.controller")
 /**
  * Get All Products List
  */
-router.get("/",GetProducts)
+router.get("/",controller.getProducts)
 /**
  * Post Product with Product Name , Product type and product Id.
  */
-router.post("/",PostProduct)
+router.post("/",controller.postProduct)
+
+
+router.put("/:id",controller.putProduct)
+
+
+router.delete("/:id",controller.deleteProduct)
 
 /**
  * Get Products By Category
  */
-router.get("/:Category",GetProductsWithCategory)
+router.get("/:Category",controller.getProductsWithCategory)
 
 module.exports = router

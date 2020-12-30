@@ -1,10 +1,10 @@
 const { v4 } = require("uuid")
 const MallProducts = require("../models/products.model")
 const { GetUsers } = require("./users.controller")
-let GetProducts = (req,res)=>{
+module.exports.getProducts = (req,res)=>{
     res.json(MallProducts)
 }
-let PostProduct = (req,res)=>{
+module.exports.postProduct = (req,res)=>{
     let newProduct = {
         ProductName : req.body.ProductName,
         ProductId : v4(),
@@ -14,9 +14,25 @@ let PostProduct = (req,res)=>{
     res.json(MallProducts)
 }
 
-let GetProductsWithCategory = (req,res)=>{
+module.exports.putProduct = (req,res)=>{
+    MallProducts.forEach((item)=>{
+        if(item.ProductId == req.params.id){
+            item.ProductName = req.body.ProductName,
+            item.Category = req.body.Category
+        }
+    })
+     res.json(MallProducts)
+}
+
+module.exports.getProductsWithCategory = (req,res)=>{
     var filtered = MallProducts.filter((item)=>item.Category == req.params.Category)
     res.json(filtered)
 }
-
-module.exports = {GetProducts,PostProduct,GetProductsWithCategory}
+module.exports.deleteProduct = (req,res)=>{
+   MallProducts.forEach((item,index)=>{
+       if(item.ProductId == req.params.id){
+           MallProducts.splice(index,1)
+       }
+   })
+    res.json(MallProducts)
+}

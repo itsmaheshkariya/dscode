@@ -1,22 +1,27 @@
 const express = require("express")
 const router = express.Router()
 
-const {GetUsers,PostUser,GetUser} = require("../controllers/users.controller")
+const controller = require("../controllers/users.controller")
 
 /**
  * Get All Users List
  */
-router.get("/",GetUsers)
+router.get("/",controller.getUsers)
 
 /**
  * Post User with name,email,password,address and pin code.
  */
-router.post("/",PostUser)
+router.post("/",controller.postUser)
+
+router.put("/",controller.putUser)
+
+router.delete("/:id",controller.deleteUser)
+
 
 /**
  * Get Specific USer By its Id
  */
 
-router.get("/:id",GetUser)
+router.get("/:id",controller.getUser)
 
 module.exports = router
