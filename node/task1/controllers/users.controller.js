@@ -4,7 +4,7 @@ module.exports.getUsers = (req,res)=>{
 }
 module.exports.postUser = (req,res)=>{
     if(req.body == null){
-        return res.send("Bad Request")
+        return res.send("Bad Request").status(400)
     }else{
         let newUser = {
             name:req.body.name,
@@ -20,7 +20,7 @@ module.exports.postUser = (req,res)=>{
 
 module.exports.putUser = (req,res)=>{
     if(req.body == null){
-        return res.send("Bad Request")
+        return res.send("Bad Request").status(400)
     }else{
     MallUsers.forEach((item)=>{
         if(item.id == req.params.id){
@@ -39,7 +39,7 @@ module.exports.getUser = (req,res)=>{
     if(req.params.id != null){
     res.json(MallUsers.find((item)=>item.id == req.params.id))}
     else{
-        res.send("Bad Request")
+        res.send("Bad Request").status(400)
     }
 }
 
@@ -54,6 +54,6 @@ module.exports.deleteUser = (req,res)=>{
     res.json(MallUsers)
     }
     else{
-        res.send("Bad Request")
+        res.send("Bad Request").status(400)
     }
 }
