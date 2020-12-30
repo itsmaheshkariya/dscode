@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const {GetUsers,PostUser,GetUser} = require("../controllers/users")
+const {GetUsers,PostUser,GetUser} = require("../controllers/users.controller")
 
 /**
  * Get All Users List

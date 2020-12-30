@@ -1,5 +1,8 @@
-const MallUsers = require("../modules/users")
+const MallUsers = require("../models/users.model")
 let GetUsers = (req,res)=>{
+    res.json(MallUsers)
+}
+let PostUser = (req,res)=>{
     let newUser = {
         name:req.body.name,
         email:req.body.email,
@@ -8,9 +11,6 @@ let GetUsers = (req,res)=>{
         pin:req.body.pin
     }
     MallUsers.push(newUser)
-    res.json(MallUsers)
-}
-let PostUser = (req,res)=>{
     res.json(MallUsers)
 }
 let GetUser = (req,res)=>{

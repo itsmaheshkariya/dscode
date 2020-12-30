@@ -1,6 +1,6 @@
 const { v4 } = require("uuid")
-const MallProducts = require("../modules/products")
-const { GetUsers } = require("./users")
+const MallProducts = require("../models/products.model")
+const { GetUsers } = require("./users.controller")
 let GetProducts = (req,res)=>{
     res.json(MallProducts)
 }

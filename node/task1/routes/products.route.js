@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const { GetProducts, PostProduct, GetProductsWithCategory } = require("../controllers/products")
+const { GetProducts, PostProduct, GetProductsWithCategory } = require("../controllers/products.controller")
 /**
  * Get All Products List
  */
