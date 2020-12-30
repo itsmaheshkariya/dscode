@@ -13,5 +13,8 @@ let GetUsers = (req,res)=>{
 let PostUser = (req,res)=>{
     res.json(MallUsers)
 }
+let GetUser = (req,res)=>{
+    res.json(MallUsers.find((item)=>item.id == req.params.id))
+}
 
-module.exports = {GetUsers,PostUser}
+module.exports = {GetUsers,PostUser,GetUser}

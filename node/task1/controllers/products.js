@@ -1,5 +1,6 @@
 const { v4 } = require("uuid")
 const MallProducts = require("../modules/products")
+const { GetUsers } = require("./users")
 let GetProducts = (req,res)=>{
     res.json(MallProducts)
 }
@@ -13,4 +14,9 @@ let PostProduct = (req,res)=>{
     res.json(MallProducts)
 }
 
-module.exports = {GetProducts,PostProduct}
+let GetProductsWithCategory = (req,res)=>{
+    var filtered = MallProducts.filter((item)=>item.Category == req.params.Category)
+    res.json(filtered)
+}
+
+module.exports = {GetProducts,PostProduct,GetProductsWithCategory}
