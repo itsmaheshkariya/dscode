@@ -1,0 +1,16 @@
+{
+  "name": "day9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1"
+  }
+}
